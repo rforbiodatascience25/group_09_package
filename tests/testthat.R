@@ -10,3 +10,8 @@ library(testthat)
 library(RNAfriends)
 
 test_check("RNAfriends")
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 2bede22dcc4b3c7ef88470fa389442c88911c395
