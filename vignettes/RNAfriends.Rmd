@@ -39,6 +39,13 @@ RNAfriends::plot_aminoacids_abundance()
 
 ## function_2
 
+To transcribe DNA into RNA, the nucleotide thymine (T) need to be changed into uracil (U), this function is responsible for this change.
+
+```{r}
+DNAsequence <-"CTAAAAAAGGGGGGTTTTTTTTTCCCCCCCCCGTCAGCTACGTATGATGAGTAGATGCATATTTTT"
+RNAfriends::function2(DNAsequence )
+```
+
 ## codonize
 
 ## RNA_aminoacid_translation
