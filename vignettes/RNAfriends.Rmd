@@ -37,12 +37,22 @@ RNAfriends::plot_aminoacids_abundance()
 
 ## makeDNA
 
-## function_2
+Use this function to generate a random sequence of DNA, of the length that you prefer. generateseq requires an integer that will define the length of your DNA sequence.
+
+Bear in mind that, to obtain meaningful results with this package, your DNA length should be \>= 3.
+
+Example:
+
+```{r}
+RNAfriends::makeDNA(250)
+```
+
+## function2
 
 ## codonize
 
 ## RNA_aminoacid_translation
 
-## plot_aminoacics_abundance
+## plot_aminoacids_abundance
 
 ## Combined example
