@@ -1,6 +1,6 @@
 Package: RNAfriends
 Type: Package
-Title: This package does something with the central dogma of molecular biology.
+Title: This package does something with the central dogma of molecular biology
 Version: 0.1.0
 Authors@R: c(
     person(
@@ -14,7 +14,7 @@ Authors@R: c(
       role = c("aut", "cre")
     ),
     person(
-      "Selene",
+      "Selina",
       email = "s2547921@dtu.dk",
       role = "aut"
     ),
@@ -34,8 +34,6 @@ Description: Central dogma of biology, we will do something with it.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    R (>= 3.5)
 RoxygenNote: 7.3.2
 Suggests: 
     testthat (>= 3.0.0)
