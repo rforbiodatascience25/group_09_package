@@ -51,8 +51,36 @@ RNAfriends::makeDNA(250)
 
 ## codonize
 
+Splits a sequence of DNA or RNA into strings of codons.
+
+```{r}
+sequence = "ATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGAGACTTGACATCGAUGTAATCGAUGTTAATGACATTGACATCGAUGCGAUGTTAATGACATCGAUGTTAATGAGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTA"
+
+codonize(sequence, start = 1)
+```
+
 ## RNA_aminoacid_translation
 
+<<<<<<< HEAD
 ## plot_aminoacids_abundance
+=======
+The function decodes a given RNA sequence to its aminoacid components.
+
+```{r}
+RNA_sequence = c("UUU", "AAA", "AUA")
+peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
+
+peptide_sequence
+```
+
+## plot_aminoacics_abundance
+>>>>>>> 9471d21f9203cfd6341fc4f40e125ffa491394cd
+
+The function plots the aminoacids abundance for a given peptide-sequence.
+
+```{r}
+peptide_sequence = "QERRYQ"
+RNAfriends::plot_aminoacids_abundance(peptide_sequence)
+```
 
 ## Combined example
