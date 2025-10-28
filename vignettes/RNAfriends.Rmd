@@ -60,7 +60,7 @@ peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
 peptide_sequence
 ```
 
-## plot_aminoacics_abundance
+## plot_aminoacids_abundance
 
 The function plots the aminoacids abundance for a given peptide-sequence.
 
