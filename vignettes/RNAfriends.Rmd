@@ -1,6 +1,6 @@
 ---
 title: "RNAfriends"
-output: rmarkdown::html_vignette
+output: rmarkdown::pdf_document
 vignette: >
   %\VignetteIndexEntry{RNAfriends}
   %\VignetteEngine{knitr::rmarkdown}
@@ -26,14 +26,15 @@ With this package, you can recreate a DNA sequence, transcribe it, translate it 
 
 The functions that this package contains are:
 
-```{r}
-RNAfriends::makeDNA()
-RNAfriends::function2()
-RNAfriends::codonize()
-RNAfriends::RNA_aminoacid_translation()
-RNAfriends::plot_aminoacids_abundance()
+-   RNAfriends::makeDNA()
 
-```
+-   RNAfriends::function2()
+
+-   RNAfriends::codonize()
+
+-   RNAfriends::RNA_aminoacid_translation()
+
+-   RNAfriends::plot_aminoacids_abundance()
 
 ## makeDNA
 
@@ -58,6 +59,8 @@ RNAfriends::function2(DNAsequence )
 
 ## codonize
 
+The function returns the codons of a DNA or RNA sequence.
+
 ```{r}
 sequence = "ATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGAGACTTGACATCGAUGTAATCGAUGTTAATGACATTGACATCGAUGCGAUGTTAATGACATCGAUGTTAATGAGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTA"
 
@@ -70,6 +73,7 @@ The function decodes a given RNA sequence to its aminoacid components.
 
 ```{r}
 RNA_sequence = c("UUU", "AAA", "AUA")
+RNA_sequence
 peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
 
 peptide_sequence
@@ -87,3 +91,43 @@ RNAfriends::plot_aminoacids_abundance(peptide_sequence)
 ## Combined example
 
 Here we provide an example, where you can combine the functions.
+
+```{r}
+my_dna <- RNAfriends::makeDNA(20)
+print(my_dna)
+
+my_rna <- RNAfriends::function2(my_dna)
+print(my_rna)
+
+my_rna_codonized <- RNAfriends::codonize(my_rna, start = 1)
+print(my_rna_codonized)
+
+peptide_sequence = RNAfriends::RNA_aminoacid_translation(my_rna_codonized)
+print(peptide_sequence)
+
+RNAfriends::plot_aminoacids_abundance(peptide_sequence)
+```
+
+## Use cases:
+
+The package can be used to visualize a given DNA sequence and illustrate nicely what Aminoacid it can produces.
+
+Additional functions could include some analysis of the produced peptide sequence.
+
+## Discussion Package dependencies
+
+The packages are added via import statements in the description of the function.
+
+-   @importFrom ggplot2 ggplot aes geom_col theme_bw theme
+
+-   @importFrom stringr str_split boundary str_count
+
+It is good to limit the number of dependencies, as less error could occur and the maintenance gets simpler. The installation speed is reduced with more packages.
+
+However it cannot always be avoided, as one should reuse pre-existing working code (like the stringr and ggplot2 packages). Especially with ggplot2, the package has a complex functionality, so it doesn't make sense to recreate it from scratch.
+
+**Differences in dependency function calls:**
+
+*Import from package function* means that specified function is imported into the package's namespace, so it can be used directly without the package:: prefix. However it risks conflicts with redundant function names from other packages.
+
+Loading a function via *package::function()* is an explicit call to another package. It doesn't hold the risk of unwanted behavior.
