@@ -1,15 +1,35 @@
 Package: RNAfriends
 Type: Package
-Title: What the Package Does (Title Case)
+Title: This package does something with the central dogma of molecular biology.
 Version: 0.1.0
 Authors@R: c(
     person(
-      "Jane", "Doe",
-      email = "jane@example.com",
+      "Sergi",
+      email = "s252027@dtu.dk",
+      role = "aut"
+    ),
+    person(
+      "Tommaso",
+      email = "tobal@dtu.dk",
       role = c("aut", "cre")
+    ),
+    person(
+      "Selene",
+      email = "s2547921@dtu.dk",
+      role = "aut"
+    ),
+    person(
+      "Marta",
+      email = "msasa@dtu.dk",
+      role = "aut"
+    ),
+    person(
+      "Ivan",
+      email = "s225210@dtu.dk",
+      role = "aut"
     )
   )
-Description: More about what it does (maybe more than one line).
+Description: Central dogma of biology, we will do something with it.
     Continuation lines should be indented.
 License: MIT + file LICENSE
 Encoding: UTF-8
