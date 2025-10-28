@@ -61,8 +61,6 @@ RNAfriends::codonize(sequence, start = 1)
 
 ## RNA_aminoacid_translation
 
-## plot_aminoacids_abundance
-
 The function decodes a given RNA sequence to its aminoacid components.
 
 ```{r}
@@ -73,7 +71,6 @@ peptide_sequence
 ```
 
 ## plot_aminoacids_abundance
-
 
 The function plots the aminoacids abundance for a given peptide-sequence.
 
