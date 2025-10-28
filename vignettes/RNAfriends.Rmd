@@ -56,7 +56,7 @@ Splits a sequence of DNA or RNA into strings of codons.
 ```{r}
 sequence = "ATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGAGACTTGACATCGAUGTAATCGAUGTTAATGACATTGACATCGAUGCGAUGTTAATGACATCGAUGTTAATGAGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTA"
 
-codonize(sequence, start = 1)
+RNAfriends::codonize(sequence, start = 1)
 ```
 
 ## RNA_aminoacid_translation
@@ -72,7 +72,7 @@ peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
 peptide_sequence
 ```
 
-## plot_aminoacics_abundance
+## plot_aminoacids_abundance
 
 
 The function plots the aminoacids abundance for a given peptide-sequence.
