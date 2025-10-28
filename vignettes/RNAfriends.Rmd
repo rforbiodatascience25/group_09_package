@@ -28,7 +28,7 @@ The functions that this package contains are:
 
 ```{r}
 RNAfriends::makeDNA()
-RNAfriends::function_2()
+RNAfriends::function2()
 RNAfriends::codonize()
 RNAfriends::RNA_aminoacid_translation()
 RNAfriends::plot_aminoacids_abundance()
@@ -37,7 +37,7 @@ RNAfriends::plot_aminoacids_abundance()
 
 ## makeDNA
 
-## function_2
+## function2
 
 To transcribe DNA into RNA, the nucleotide thymine (T) need to be changed into uracil (U), this function is responsible for this change.
 
@@ -48,32 +48,8 @@ RNAfriends::function2(DNAsequence )
 
 ## codonize
 
-Splits a sequence of DNA or RNA into strings of codons.
-
-```{r}
-sequence = "ATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGAGACTTGACATCGAUGTAATCGAUGTTAATGACATTGACATCGAUGCGAUGTTAATGACATCGAUGTTAATGAGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTAATGACATCGAUGTTA"
-
-RNAfriends::codonize(sequence, start = 1)
-```
-
 ## RNA_aminoacid_translation
 
-The function decodes a given RNA sequence to its aminoacid components.
-
-```{r}
-RNA_sequence = c("UUU", "AAA", "AUA")
-peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
-
-peptide_sequence
-```
-
-## plot_aminoacids_abundance
-
-The function plots the aminoacids abundance for a given peptide-sequence.
-
-```{r}
-peptide_sequence = "QERRYQ"
-RNAfriends::plot_aminoacids_abundance(peptide_sequence)
-```
+## plot_aminoacics_abundance
 
 ## Combined example
