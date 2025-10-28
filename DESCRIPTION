@@ -34,3 +34,6 @@ Description: Central dogma of biology, we will do something with it.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Depends: 
+    R (>= 3.5)
+RoxygenNote: 7.3.2
