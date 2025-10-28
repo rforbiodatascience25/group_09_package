@@ -17,3 +17,32 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(RNAfriends)
 ```
+
+## Package description
+
+This package is based on the central dogma of molecular biology, which states that a DNA filament (sequence of nucleotides) is transcribed into RNA, which is finally translated into aminoacid sequences (that form proteins).
+
+With this package, you can recreate a DNA sequence, transcribe it, translate it and visualize the relative abundance of the aminoacids.
+
+The functions that this package contains are:
+
+```{r}
+RNAfriends::makeDNA()
+RNAfriends::function_2()
+RNAfriends::codonize()
+RNAfriends::RNA_aminoacid_translation()
+RNAfriends::plot_aminoacids_abundance()
+
+```
+
+## makeDNA
+
+## function_2
+
+## codonize
+
+## RNA_aminoacid_translation
+
+## plot_aminoacics_abundance
+
+## Combined example
