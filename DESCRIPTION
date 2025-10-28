@@ -40,10 +40,8 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-<<<<<<< HEAD
 Imports: 
     ggplot2,
     stringr
-=======
 VignetteBuilder: knitr
->>>>>>> 80c29a00c3e224f39173eee292a37beb7d26b8c4
+
