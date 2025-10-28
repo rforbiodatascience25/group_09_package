@@ -1,6 +1,6 @@
 #' Make a DNA sequence
 #'
-#' @param generateseq this function generates a sampled line of nucleotides, in a DNA_string format.
+#' @param generateseq insert a number that will define the length of your nucleotide string.
 #'
 #' @returns the function returns a character string of DNA bases.
 #' @export
