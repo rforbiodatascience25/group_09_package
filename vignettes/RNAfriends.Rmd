@@ -43,6 +43,22 @@ RNAfriends::plot_aminoacids_abundance()
 
 ## RNA_aminoacid_translation
 
+The function decodes a given RNA sequence to its aminoacid components.
+
+```{r}
+RNA_sequence = c("UUU", "AAA", "AUA")
+peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
+
+peptide_sequence
+```
+
 ## plot_aminoacics_abundance
+
+The function plots the aminoacids abundance for a given peptide-sequence.
+
+```{r}
+peptide_sequence = "QERRYQ"
+RNAfriends::plot_aminoacids_abundance(peptide_sequence)
+```
 
 ## Combined example
