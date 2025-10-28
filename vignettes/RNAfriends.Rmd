@@ -37,6 +37,7 @@ RNAfriends::plot_aminoacids_abundance()
 
 ## makeDNA
 
+<<<<<<< HEAD
 ## function2
 
 To transcribe DNA into RNA, the nucleotide thymine (T) need to be changed into uracil (U), this function is responsible for this change.
@@ -45,11 +46,47 @@ To transcribe DNA into RNA, the nucleotide thymine (T) need to be changed into u
 DNAsequence <-"CTAAAAAAGGGGGGTTTTTTTTTCCCCCCCCCGTCAGCTACGTATGATGAGTAGATGCATATTTTT"
 RNAfriends::function2(DNAsequence )
 ```
+=======
+Use this function to generate a random sequence of DNA, of the length that you prefer. generateseq requires an integer that will define the length of your DNA sequence.
+
+Bear in mind that, to obtain meaningful results with this package, your DNA length should be \>= 3.
+
+Example:
+
+```{r}
+RNAfriends::makeDNA(250)
+```
+
+## function2
+>>>>>>> e2de60e91933d8623682133a917cbe160b229aa0
 
 ## codonize
 
 ## RNA_aminoacid_translation
 
+<<<<<<< HEAD
 ## plot_aminoacics_abundance
+=======
+## plot_aminoacids_abundance
+
+The function decodes a given RNA sequence to its aminoacid components.
+
+```{r}
+RNA_sequence = c("UUU", "AAA", "AUA")
+peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
+
+peptide_sequence
+```
+
+## plot_aminoacids_abundance
+
+
+The function plots the aminoacids abundance for a given peptide-sequence.
+
+```{r}
+peptide_sequence = "QERRYQ"
+RNAfriends::plot_aminoacids_abundance(peptide_sequence)
+```
+>>>>>>> e2de60e91933d8623682133a917cbe160b229aa0
 
 ## Combined example
