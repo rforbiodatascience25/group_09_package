@@ -1,6 +1,6 @@
 ---
 title: "RNAfriends"
-output: rmarkdown::pdf_document
+output: rmarkdown::html_vignette
 vignette: >
   %\VignetteIndexEntry{RNAfriends}
   %\VignetteEngine{knitr::rmarkdown}
