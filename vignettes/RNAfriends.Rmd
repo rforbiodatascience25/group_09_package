@@ -85,3 +85,5 @@ RNAfriends::plot_aminoacids_abundance(peptide_sequence)
 ```
 
 ## Combined example
+
+Here we provide an example, where you can combine the functions.
