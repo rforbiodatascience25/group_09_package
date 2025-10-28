@@ -1,11 +1,19 @@
 ---
-title: "RNAfriends"
-output: rmarkdown::pdf_document
-vignette: >
-  %\VignetteIndexEntry{RNAfriends}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
+output: github_document
 ---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# RNAfriends
 
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
@@ -17,8 +25,6 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(RNAfriends)
 ```
-
-GitHub repository: <https://github.com/rforbiodatascience25/group_09_package.git> <https://github.com/rforbiodatascience25/group_09_package.git>
 
 ## Package description
 
@@ -74,9 +80,10 @@ RNAfriends::codonize(sequence, start = 1)
 The function decodes a given RNA sequence to its aminoacid components.
 
 ```{r}
-RNA_sequence = c("UUU", "AAA", "AUA")
+RNA_sequence <- c("UUU", "AAA", "AUA")
 RNA_sequence
-peptide_sequence = RNAfriends::RNA_aminoacid_translation(RNA_sequence)
+
+peptide_sequence <- RNAfriends::RNA_aminoacid_translation(RNA_sequence)
 
 peptide_sequence
 ```
@@ -86,7 +93,7 @@ peptide_sequence
 The function plots the aminoacids abundance for a given peptide-sequence.
 
 ```{r}
-peptide_sequence = "QERRYQ"
+peptide_sequence <- "QERRYQ"
 RNAfriends::plot_aminoacids_abundance(peptide_sequence)
 ```
 
@@ -104,7 +111,7 @@ print(my_rna)
 my_rna_codonized <- RNAfriends::codonize(my_rna, start = 1)
 print(my_rna_codonized)
 
-peptide_sequence = RNAfriends::RNA_aminoacid_translation(my_rna_codonized)
+peptide_sequence <- RNAfriends::RNA_aminoacid_translation(my_rna_codonized)
 print(peptide_sequence)
 
 RNAfriends::plot_aminoacids_abundance(peptide_sequence)

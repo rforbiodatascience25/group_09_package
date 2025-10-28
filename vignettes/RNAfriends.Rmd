@@ -18,6 +18,8 @@ knitr::opts_chunk$set(
 library(RNAfriends)
 ```
 
+GitHub repository: <https://github.com/rforbiodatascience25/group_09_package.git> <https://github.com/rforbiodatascience25/group_09_package.git>
+
 ## Package description
 
 This package is based on the central dogma of molecular biology, which states that a DNA filament (sequence of nucleotides) is transcribed into RNA, which is finally translated into aminoacid sequences (that form proteins).
